@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16a34a">
+  <meta name="description" content="Shetkari AI provides smart crop disease detection, farming advice, AI support, and market insights.">
+  <title>Shetkari AI — Smart AI Assistant for Modern Farmers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { agriculture: '#16a34a' },
+          boxShadow: { soft: '0 24px 70px -32px rgba(15, 23, 42, .24)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-padding-top: 5rem; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .hero-pattern { background-image: radial-gradient(rgba(22,163,74,.11) 1px, transparent 1px); background-size: 24px 24px; }
+    summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="bg-white text-slate-950 antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8" aria-label="Main navigation">
+      <a href="#home" class="flex items-center" aria-label="Shetkari AI home">
+        <img src="./shetkari-ai-logo.png" alt="Shetkari AI" class="h-12 w-auto object-contain sm:h-14" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="hidden h-11 items-center rounded-xl bg-slate-950 px-4 text-lg font-bold text-white" aria-hidden="true">Shetkari <span class="ml-1 text-green-400">AI</span></span>
+      </a>
+      <button id="menu-button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-700 hover:bg-slate-100 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a class="transition hover:text-agriculture" href="#features">Features</a>
+        <a class="transition hover:text-agriculture" href="#about">About Us</a>
+        <a class="transition hover:text-agriculture" href="#privacy">Privacy Policy</a>
+        <a class="transition hover:text-agriculture" href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 pb-4 md:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-1 pt-2 text-sm font-medium text-slate-700">
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-50 hover:text-agriculture" href="#features">Features</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-50 hover:text-agriculture" href="#about">About Us</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-50 hover:text-agriculture" href="#privacy">Privacy Policy</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-slate-50 hover:text-agriculture" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-pattern relative overflow-hidden">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 py-20 sm:px-8 sm:py-28 lg:grid-cols-2 lg:gap-16">
+        <div class="relative z-10">
+          <span class="inline-flex items-center gap-2 rounded-full border border-green-100 bg-white px-3.5 py-1.5 text-sm font-medium text-green-800 shadow-sm"><span class="h-2 w-2 rounded-full bg-agriculture"></span>Smarter farming starts here</span>
+          <h1 class="mt-7 max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">Smart AI Assistant for <span class="text-agriculture">Modern Farmers</span></h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">Get help with crop disease detection, practical farming tips, and AI-powered agricultural guidance—designed to make everyday decisions easier.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="inline-flex items-center justify-center gap-3 rounded-xl bg-slate-950 px-5 py-3.5 font-semibold text-white shadow-lg transition hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-slate-300">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3.7 2.8c-.4.4-.7 1-.7 1.8v14.8c0 .8.3 1.4.7 1.8l.1.1 8.3-9.1v-.2L3.8 2.7l-.1.1Zm11.1 12.2-2.7-2.9v-.2l2.7-2.9.1.1 3.2 1.8c.9.5.9 1.7 0 2.2l-3.2 1.8-.1.1Zm-.6.7-2.8-3.1-8.1 8.9c.4.2.9.2 1.4-.1l9.5-5.7Zm-10.9-14 8.1 8.9 2.8-3.1-9.5-5.7c-.5-.3-1-.3-1.4-.1Z"/></svg>
+              <span class="text-left leading-tight"><span class="block text-xs font-normal text-slate-300">Download on</span><span class="block">Google Play</span></span>
+            </a>
+            <a href="#features" class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3.5 font-semibold text-slate-700 transition hover:border-green-200 hover:text-agriculture">Explore features</a>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">Google Play button is a placeholder until the app listing is available.</p>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-md">
+          <div class="absolute -left-8 top-12 h-32 w-32 rounded-full bg-green-200/60 blur-3xl"></div>
+          <div class="absolute -right-6 bottom-10 h-40 w-40 rounded-full bg-lime-200/60 blur-3xl"></div>
+          <div class="relative mx-auto max-w-[310px] rounded-[2.6rem] border-[8px] border-slate-950 bg-slate-950 p-2 shadow-[0_30px_80px_-30px_rgba(15,23,42,.35)]">
+            <div class="overflow-hidden rounded-[2rem] bg-slate-50">
+              <div class="flex items-center justify-between bg-white px-5 pb-3 pt-5">
+                <div><p class="text-xs font-medium text-slate-500">Good morning</p><p class="text-lg font-bold text-slate-900">Namaskar, Farmer</p></div>
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-agriculture">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 3v2m0 14v2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42M3 12h2m14 0h2"/></svg>
+                </div>
+              </div>
+              <div class="px-4 pb-5">
+                <div class="rounded-2xl bg-gradient-to-br from-green-600 to-green-700 p-4 text-white"><p class="text-sm font-medium text-green-100">Your farming companion</p><p class="mt-1 text-xl font-bold">How can I help today?</p>
+                  <div class="mt-4 flex h-24 items-end justify-center gap-2 overflow-hidden rounded-xl bg-white/10 px-4"><span class="h-9 w-7 rounded-t-full bg-lime-200/80"></span><span class="h-14 w-7 rounded-t-full bg-lime-100"></span><span class="h-11 w-7 rounded-t-full bg-lime-200/90"></span><span class="h-16 w-7 rounded-t-full bg-lime-100"></span><span class="h-10 w-7 rounded-t-full bg-lime-200/80"></span></div>
+                </div>
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                  <div class="rounded-2xl bg-white p-3 shadow-sm"><div class="flex h-9 w-9 items-center justify-center rounded-xl bg-orange-50 text-orange-600">葉</div><p class="mt-3 text-xs font-semibold">Crop health</p><p class="mt-1 text-[11px] text-slate-500">Check a crop photo</p></div>
+                  <div class="rounded-2xl bg-white p-3 shadow-sm"><div class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600">↗</div><p class="mt-3 text-xs font-semibold">Farm insights</p><p class="mt-1 text-[11px] text-slate-500">Tips for your fields</p></div>
+                </div>
+                <div class="mt-4 flex items-center gap-3 rounded-2xl border border-slate-100 bg-white p-3 shadow-sm"><div class="flex h-9 w-9 items-center justify-center rounded-full bg-green-100 text-agriculture">?</div><p class="text-xs leading-5 text-slate-600">Ask your farming question, anytime.</p><span class="ml-auto text-agriculture">→</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="scroll-mt-20 bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="mx-auto max-w-2xl text-center"><p class="text-sm font-bold uppercase tracking-widest text-agriculture">Made for your farm</p><h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Everything you need to grow with confidence</h2><p class="mt-4 leading-7 text-slate-600">Practical tools and helpful guidance, brought together in one easy-to-use farming companion.</p></div>
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-slate-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"><div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 text-xl text-agriculture">葉</div><h3 class="mt-5 text-lg font-bold">AI Crop Disease Detection</h3><p class="mt-2 text-sm leading-6 text-slate-600">Get an instant, AI-assisted assessment by sharing a photo of a crop. Use results as guidance, not a substitute for expert diagnosis.</p></article>
+          <article class="rounded-2xl border border-slate-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"><div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-xl text-blue-600">✓</div><h3 class="mt-5 text-lg font-bold">Smart Farming Advisory</h3><p class="mt-2 text-sm leading-6 text-slate-600">Explore personalized crop and soil tips to support better-informed decisions throughout the growing season.</p></article>
+          <article class="rounded-2xl border border-slate-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"><div class="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-xl text-purple-600">?</div><h3 class="mt-5 text-lg font-bold">AI Krishi Chatbot</h3><p class="mt-2 text-sm leading-6 text-slate-600">Ask farming questions and get helpful answers in simple language, whenever you need a starting point.</p></article>
+          <article class="rounded-2xl border border-slate-100 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft"><div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-xl text-amber-600">↗</div><h3 class="mt-5 text-lg font-bold">Market &amp; Scheme Insights</h3><p class="mt-2 text-sm leading-6 text-slate-600">Find useful agricultural updates, market information, and scheme insights in one convenient place.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="scroll-mt-20 bg-slate-50 py-20 sm:py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
+        <div><p class="text-sm font-bold uppercase tracking-widest text-agriculture">About us</p><h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Technology that works for people</h2><p class="mt-5 leading-7 text-slate-600">Shetkari AI is developed and maintained by <strong class="font-semibold text-slate-900">KrishnaGrid Technologies</strong>, a software and AI solutions company building mobile apps and intelligent tools.</p><p class="mt-4 leading-7 text-slate-600">We believe technology can make useful information easier to access. Shetkari AI brings together AI-assisted tools and agricultural guidance to support farmers in their everyday work.</p></div>
+        <div class="rounded-3xl bg-slate-950 p-8 text-white sm:p-10"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-500/15 text-2xl text-green-400">葉</div><h3 class="mt-6 text-2xl font-bold">Built with farmers in mind.</h3><p class="mt-3 leading-7 text-slate-300">Clear information, approachable technology, and useful tools for a changing agricultural landscape.</p><div class="mt-7 flex items-center gap-3 border-t border-white/10 pt-6"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-agriculture text-sm font-bold">KG</span><div><p class="font-semibold">KrishnaGrid Technologies</p><p class="text-sm text-slate-400">Software &amp; AI solutions</p></div></div></div>
+      </div>
+    </section>
+
+    <section id="privacy" class="scroll-mt-20 bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <div class="mb-8"><p class="text-sm font-bold uppercase tracking-widest text-agriculture">Your privacy matters</p><h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Privacy Policy</h2><p class="mt-3 text-sm text-slate-500">For Shetkari AI · Provided by KrishnaGrid Technologies · Effective date: November 19, 2026</p></div>
+        <div class="rounded-2xl border border-slate-200 p-6 sm:p-8">
+          <p class="leading-7 text-slate-600">This Privacy Policy explains how Shetkari AI, developed and maintained by KrishnaGrid Technologies, may handle information when you use the app. The app’s actual data practices depend on the features and service providers in use. Please ensure this policy accurately reflects the live app before publishing.</p>
+          <div class="mt-7 space-y-6">
+            <div><h3 class="font-bold">Information and crop images</h3><p class="mt-2 leading-7 text-slate-600">Crop analysis may request access to your camera or photos so you can submit an image for analysis. Camera or photo access is used only after you grant permission. Images and information you provide may be processed to generate a response. Avoid including people or documents in crop photos.</p></div>
+            <div><h3 class="font-bold">AI and third-party services</h3><p class="mt-2 leading-7 text-slate-600">Some features may use third-party AI or infrastructure providers to process submitted questions or images. Information necessary to provide the requested feature may be shared with those providers and handled under their applicable terms and privacy policies.</p></div>
+            <div><h3 class="font-bold">Data security and retention</h3><p class="mt-2 leading-7 text-slate-600">KrishnaGrid Technologies takes reasonable steps to protect information processed by Shetkari AI. No method of transmission or storage is completely secure. Information should be retained only as long as needed to provide the service or meet applicable obligations.</p></div>
+            <div><h3 class="font-bold">Your choices and rights</h3><p class="mt-2 leading-7 text-slate-600">You can choose whether to grant camera or photo permissions and change those permissions in device settings. Depending on your location, you may have rights to access, correct, or delete personal information. Contact <a class="font-medium text-agriculture underline underline-offset-4" href="mailto:contact@krishnagrid.com">contact@krishnagrid.com</a>.</p></div>
+            <div><h3 class="font-bold">Children and policy updates</h3><p class="mt-2 leading-7 text-slate-600">Shetkari AI is not intended to collect personal information from children without appropriate consent. We may update this policy as the app or applicable requirements change.</p></div>
+          </div>
+          <p class="mt-7 rounded-xl bg-amber-50 p-4 text-sm leading-6 text-amber-900"><strong>Before publishing:</strong> Confirm this policy matches the app’s real permissions, AI providers, analytics, storage, and retention practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-20 bg-green-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="flex flex-col justify-between gap-8 rounded-3xl bg-white p-7 shadow-sm sm:p-10 lg:flex-row lg:items-center"><div><p class="text-sm font-bold uppercase tracking-widest text-agriculture">Get in touch</p><h2 class="mt-2 text-3xl font-extrabold tracking-tight">We’d love to hear from you.</h2><p class="mt-3 text-slate-600">Questions or feedback about Shetkari AI? Reach out to our team.</p></div><div class="space-y-4 text-sm"><a href="mailto:contact@krishnagrid.com" class="flex items-center gap-3 text-slate-700 transition hover:text-agriculture"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-green-50 text-agriculture">✉</span><span><span class="block text-xs text-slate-500">Email us</span><span class="font-semibold">contact@krishnagrid.com</span></span></a><div class="flex items-center gap-3 text-slate-700"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-green-50 text-agriculture">⌖</span><span><span class="block text-xs text-slate-500">Business location</span><span class="font-semibold">Maharashtra, India</span></span></div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-300"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-sm sm:px-8 md:flex-row md:items-center md:justify-between"><a href="#home" class="font-bold text-white">Shetkari <span class="text-green-400">AI</span></a><p>© 2026 KrishnaGrid Technologies. All rights reserved.</p><a class="transition hover:text-green-400" href="#privacy">Privacy Policy</a></div></footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden', isExpanded);
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
+</body>
+</html>
